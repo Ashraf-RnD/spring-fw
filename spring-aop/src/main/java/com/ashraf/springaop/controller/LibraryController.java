@@ -9,11 +9,11 @@ import com.ashraf.commons.springfwcommons.models.request.AddBookRequest;
 import com.ashraf.commons.springfwcommons.models.response.AddBookResponse;
 import com.ashraf.springaop.service.interfaces.BookService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequiredArgsConstructor
 public class LibraryController {
     private final BookService bookService;
