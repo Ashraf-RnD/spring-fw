@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/spring-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-fw-commons/pom.xml" />
         <option value="$PROJECT_DIR$/redis-sub/pom.xml" />
+        <option value="$PROJECT_DIR$/rdbc-webflux/pom.xml" />
       </list>
     </option>
   </component>

@@ -11,9 +11,11 @@
         <module name="redis-sub" />
         <module name="spring-aop" />
         <module name="redis-pub" />
+        <module name="rdbc-webflux" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="rdbc-webflux" target="11" />
       <module name="redis-pub" target="11" />
       <module name="redis-sub" target="11" />
       <module name="spring-aop" target="11" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="rdbc-webflux" options="-parameters" />
       <module name="redis-pub" options="-parameters" />
       <module name="redis-sub" options="-parameters" />
       <module name="spring-aop" options="-parameters" />
