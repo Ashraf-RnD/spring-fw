@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/aws-local/aws-local.iml" filepath="$PROJECT_DIR$/aws-local/aws-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/rdbc-webflux/rdbc-webflux.iml" filepath="$PROJECT_DIR$/rdbc-webflux/rdbc-webflux.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis-pub/redis-pub.iml" filepath="$PROJECT_DIR$/redis-pub/redis-pub.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis-sub/redis-sub.iml" filepath="$PROJECT_DIR$/redis-sub/redis-sub.iml" />
