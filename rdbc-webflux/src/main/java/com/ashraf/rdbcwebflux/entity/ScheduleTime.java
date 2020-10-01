@@ -12,7 +12,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("bkash_to_npsb_scheduled_time")
+@Table("scheduled_time")
 public class ScheduleTime {
     @Id
     @Column("scheduled_hour")

@@ -1,5 +1,6 @@
 package com.ashraf.rdbcwebflux.controller;
 
+import com.ashraf.rdbcwebflux.api.ApiService;
 import com.ashraf.rdbcwebflux.entity.ScheduleTime;
 import com.ashraf.rdbcwebflux.request.ScheduleTimeRequest;
 import com.ashraf.rdbcwebflux.service.ScheduleService;
@@ -16,10 +17,11 @@ import reactor.core.publisher.Mono;
 public class ScheduleTimeController {
 
     private final ScheduleService scheduleService;
+    private final ApiService apiService;
 
     @GetMapping("/getAllSchedule")
     public Flux<ScheduleTime> getAllSchedule(){
-        return scheduleService.getAllSchedule();
+        return apiService.getAllScheduleTime();
     }
 
     @PostMapping("/updateSchedule")
