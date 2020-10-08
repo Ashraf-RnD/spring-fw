@@ -106,3 +106,7 @@ r
 Baws-local/src/main/java/com/ashraf/awslocal/stack/s3/S3Config.java,d/8/d881c58834d1f24cb2d2e6e6a11fe1feab3a81ab
 l
 <aws-local/src/main/java/com/ashraf/awslocal/util/Common.java,d/a/da18c687c40131e1934c98f389918e6df21417ef
+t
+Daws-local/src/main/java/com/ashraf/awslocal/stack/sqs/SqsConfig.java,f/f/ffb75ae5af2fb52a19dc92ded5200fb8328c4e26
+x
+Haws-local/src/main/java/com/ashraf/awslocal/stack/sqs/SqsOperations.java,1/b/1b0481ed6e752a3be1efaf0b7879994a535a1dea
