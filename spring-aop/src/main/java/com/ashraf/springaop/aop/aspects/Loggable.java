@@ -3,7 +3,7 @@
  * 7/3/20, 11:37 AM
  */
 
-package com.ashraf.springaop.core.annotations;
+package com.ashraf.springaop.aop.aspects;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
