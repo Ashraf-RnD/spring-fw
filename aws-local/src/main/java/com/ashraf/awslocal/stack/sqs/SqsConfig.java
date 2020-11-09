@@ -24,4 +24,5 @@ public class SqsConfig {
                 .region(Region.AP_SOUTHEAST_1)
                 .build();
     }
+
 }

@@ -21,6 +21,8 @@
         <module>redis-sub</module>
         <module>rdbc-webflux</module>
         <module>spring-aop</module>
+        <module>aws-local</module>
+        <module>sqs-spring-cloud</module>
     </modules>
 
 </project>
