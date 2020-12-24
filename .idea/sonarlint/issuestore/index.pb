@@ -28,3 +28,5 @@ Gspring-aop/src/main/java/com/ashraf/springaop/aop/aspects/Loggable.java,b/1/b1
 Ospring-aop/src/main/java/com/ashraf/springaop/service/impl/BookServiceImpl.java,f/2/f28e957f56a1f3d81e293e956d75ddabe793e750
 }
 Mspring-aop/src/main/java/com/ashraf/springaop/aop/aspects/LoggableAcpect.java,6/e/6e8d5b23e4e11171cfb99de24e92589ab1163971
+r
+Baws-local/src/main/java/com/ashraf/awslocal/stack/s3/S3Config.java,d/8/d881c58834d1f24cb2d2e6e6a11fe1feab3a81ab
