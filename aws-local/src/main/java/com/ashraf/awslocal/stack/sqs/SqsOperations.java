@@ -45,11 +45,12 @@ public class SqsOperations {
 
     private void sendMessageToQueue(SendMessageRequest msgRequest) {
         try {
+            log.info("SqsOperations:: sendMessageToQueue:: SendMessageRequest: {}",msgRequest.toString());
             var enQueueResult = sqsClient.sendMessage(msgRequest);
 
-            log.info("SqsOperations:: enQueue:: enQueueResult: {}", enQueueResult.toString());
+            log.info("SqsOperations:: sendMessageToQueue:: enQueueResult: {}", enQueueResult.toString());
         } catch (Exception e) {
-            log.info("SqsOperations:: enQueue:: ERROR: {}", e.toString());
+            log.info("SqsOperations:: sendMessageToQueue:: ERROR: {}", e.toString());
         }
     }
 

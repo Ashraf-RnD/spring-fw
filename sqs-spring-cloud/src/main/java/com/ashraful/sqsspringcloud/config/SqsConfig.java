@@ -10,6 +10,7 @@ import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.amazonaws.services.sqs.AmazonSQSAsyncClientBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.cloud.aws.messaging.config.QueueMessageHandlerFactory;
+import org.springframework.cloud.aws.messaging.config.SimpleMessageListenerContainerFactory;
 import org.springframework.cloud.aws.messaging.core.QueueMessagingTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,8 +23,10 @@ import java.util.Collections;
 
 @Configuration
 public class SqsConfig {
-    public static final String LOCALSTACK_ENDPOINT = "http://localhost:4566";
+    public static final String LOCALSTACK_ENDPOINT = "http://localhost:7576";
     public static final String REGION = "ap-southeast-1";
+
+    private static final int BATCH_SIZE = 10;
 
     @Bean
     @Primary
@@ -54,5 +57,14 @@ public class SqsConfig {
         converter.setStrictContentTypeMatch(false);
         converter.setObjectMapper(mapper);
         return converter;
+    }
+
+    @Bean
+    public SimpleMessageListenerContainerFactory simpleMessageListenerContainerFactory(AmazonSQSAsync amazonSqs) {
+        SimpleMessageListenerContainerFactory factory = new SimpleMessageListenerContainerFactory();
+        factory.setAmazonSqs(amazonSqs);
+        factory.setMaxNumberOfMessages(BATCH_SIZE);
+
+        return factory;
     }
 }
