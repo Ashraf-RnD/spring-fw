@@ -10,5 +10,5 @@ public class Common {
     }
 
     public static final String REGION = "ap-southeast-1";
-    public static final String LOCALSTACK_ENDPOINT = "http://localhost:4566";
+    public static final String LOCALSTACK_ENDPOINT = "http://localhost:7576";
 }
